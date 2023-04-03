@@ -1,0 +1,16 @@
+sudo -i
+apt-get update -y
+apt-get install default-jre -y
+apt-get install default-jdk -y
+java -version
+ls /usr/lib/jvm/
+apt install vim -y 
+vim /etc/profile.d/jdk11.sh
+
+export JAVA_HOME=" /usr/lib/jvm/jdk/java-1.11.0"
+export PATH="$PATH:${JAVA_HOME}/bin/"
+
+echo $JAVA_HOME
+
+if above command not works reboot or restart the server once
+echo $PATH
